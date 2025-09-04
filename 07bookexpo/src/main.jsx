@@ -8,6 +8,7 @@ import About from './Components/About/About.jsx'
 import Home from './Components/Home/Home.jsx'
 import Contact from './Components/Contact/Contact.jsx'
 import Bookhub from './Components/Bookhub/Bookhub.jsx'
+// import Bookhub, { bookhubInfoLoader } from './Components/Bookhub/Bookhub.jsx'/
 
 
 const router=createBrowserRouter([
@@ -26,11 +27,16 @@ const router=createBrowserRouter([
         element:<About/>
       },{
         path:"Contact",
-        element:<Contact/>
-      },{
+        element:<Contact/>},
+      {
         path:"Github",
         element:<Bookhub/>
-      }
+      },
+      // {
+      //   loader: { bookhubInfoLoader},
+      //   path:"Github",
+      //   element:<Bookhub/>
+      // }
 
     ]
 
