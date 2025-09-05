@@ -1,11 +1,16 @@
-import UserContextProvider from "./assets/Context/Contextprovider"
-
+import UserContextProvider from "./Context/UserContextProvider"
+import Login from "./Components/Login"
+import Profile from "./Components/Profile"
+import UserContext from "./Context/UserContext"
+import './App.css'
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <UserContextProvider>
   <div className='bg-orange'>hello</div>
+  <Login/>
+  <Profile/>
     </UserContextProvider>
   )
 }
